@@ -122,22 +122,23 @@ function renderQuestion(){
   document.getElementById('qfb').style.display='none';
   document.getElementById('qnxt').classList.remove('on');
   document.getElementById('qopts').innerHTML = q.opts.map((opt,i)=>
-    `<button class="opt" onclick="selectAns(this,${i===q.ans},'${q.explain.replace(/'/g,"&#39;")}')">${opt}</button>`
+    `<button class="opt" onclick="selectAns(this,${i===q.ans})">${opt}</button>`
   ).join('');
 }
 
-function selectAns(btn,correct,explain){
+function selectAns(btn,correct){
   if(answered) return;
   answered=true;
   const allOpts = document.querySelectorAll('.opt');
   allOpts.forEach(b=>b.disabled=true);
   const quiz=QUIZZES[currentLine];
-  const correctIdx=quiz.questions[currentQ].ans;
+  const q=quiz.questions[currentQ];
+  const correctIdx=q.ans;
   allOpts[correctIdx].classList.add('correct');
   if(!correct){ btn.classList.add('wrong'); } else { score++; }
   const fb=document.getElementById('qfb');
   fb.className='fb '+(correct?'ok':'bad');
-  fb.innerHTML=(correct?'✅ Correct! ':'❌ Not quite. ')+explain;
+  fb.innerHTML=(correct?'✅ Correct! ':'❌ Not quite. ')+q.explain;
   fb.style.display='block';
   document.getElementById('qnxt').classList.add('on');
   const last=currentQ===quiz.questions.length-1;
