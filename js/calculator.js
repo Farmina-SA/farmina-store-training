@@ -46,18 +46,28 @@ function calcPortion(petType, weightKg, productName, maturityStr){
   return Math.round(factor * Math.pow(weightKg, 0.75));
 }
 
-function initCalculator(){
+function updateProductList(){
   const sel = document.getElementById('cProductSelect');
-  if(!sel) return;
+  const petTypeSelect = document.getElementById('cPetType');
+  if(!sel || !petTypeSelect) return;
+  
+  const selectedPet = petTypeSelect.value; // 'dog' or 'cat'
   sel.innerHTML = '<option value="">Custom price or choose a product</option>';
+  
   if(typeof FARMINA_SCRAPED_PRODUCTS === 'undefined') return;
-  FARMINA_SCRAPED_PRODUCTS.forEach(p=>{
+  
+  // Filter products by selected pet type
+  FARMINA_SCRAPED_PRODUCTS.filter(p => p.species === selectedPet).forEach(p=>{
     const opt = document.createElement('option');
     const petIcon = p.species === 'cat' ? '🐱' : '🐶';
     opt.value = p.product_id;
     opt.textContent = `${p.line} · ${p.product_name} ${petIcon}`;
     sel.appendChild(opt);
   });
+}
+
+function initCalculator(){
+  updateProductList();
   setGenericBagOptions();
 }
 
