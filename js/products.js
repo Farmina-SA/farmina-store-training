@@ -30,7 +30,7 @@ const PRODUCTS = [
    sizes:['800g','2.5kg','7kg','12kg'],
    sell:'34% protein entirely from named animal sources, no legumes at all. For customers who\'ve heard concerns about peas/legumes in grain-free food — Prime is the definitive answer. Highest protein content in the adult dog range.'},
 
-  {id:'q3',line:'quinoa',lineName:'N&D Quinoa',pet:'cat',stage:'kitten',
+  {id:'q3',line:'prime',lineName:'N&D Prime',pet:'cat',stage:'kitten',
    name:'Chicken & Pomegranate',variant:'Kitten',icon:'🐱',
    protein:'Italian Free-Range Chicken',
    nutrition:{protein:44,proteinAnimal:98,fat:20,moisture:8},
@@ -41,7 +41,7 @@ const PRODUCTS = [
    sizes:['300g','1.5kg','5kg'],
    sell:'Cats are obligate carnivores. 86% from animal sources means this mirrors what a cat\'s biology demands. The highest-quality kitten start you can offer.'},
 
-  {id:'q4',line:'quinoa',lineName:'N&D Quinoa',pet:'cat',stage:'adult',
+  {id:'q4',line:'prime',lineName:'N&D Prime',pet:'cat',stage:'adult',
    name:'Chicken & Pomegranate',variant:'Adult Cat',icon:'🐈',
    protein:'Italian Free-Range Chicken',
    nutrition:{protein:44,proteinAnimal:98,fat:20,moisture:8},
@@ -52,7 +52,7 @@ const PRODUCTS = [
    sizes:['300g','1.5kg','5kg'],
    sell:'One of the most biologically appropriate cat foods available. High protein, no grains, no fillers — perfect for cat owners who read labels.'},
 
-  {id:'q5',line:'quinoa',lineName:'N&D Quinoa',pet:'cat',stage:'neutered',
+  {id:'q5',line:'prime',lineName:'N&D Prime',pet:'cat',stage:'neutered',
    name:'Chicken & Pomegranate',variant:'Neutered Cat',icon:'🐈‍⬛',
    protein:'Italian Free-Range Chicken',
    nutrition:{protein:38,proteinAnimal:98,fat:11,moisture:8},
@@ -63,7 +63,7 @@ const PRODUCTS = [
    sizes:['300g','1.5kg','5kg'],
    sell:'After neutering, cats have lower energy needs and are prone to weight gain. This formula is calorie-controlled while keeping all the nutritional quality — a natural recommendation for neutered cat owners.'},
 
-  {id:'q6',line:'quinoa',lineName:'N&D Quinoa',pet:'cat',stage:'adult',
+  {id:'q6',line:'prime',lineName:'N&D Prime',pet:'cat',stage:'adult',
    name:'Boar & Apple',variant:'Adult Cat',icon:'🐈',
    protein:'Italian Wild Boar',
    nutrition:{protein:44,proteinAnimal:98,fat:20,moisture:8},
@@ -74,7 +74,7 @@ const PRODUCTS = [
    sizes:['300g','1.5kg','5kg'],
    sell:'Wild boar is a novel protein — excellent for cats with chicken or beef sensitivities. A great recommendation for cats with food intolerances or allergy concerns.'},
 
-  {id:'q7',line:'quinoa',lineName:'N&D Quinoa',pet:'cat',stage:'adult',
+  {id:'q7',line:'prime',lineName:'N&D Prime',pet:'cat',stage:'adult',
    name:'NZ Lamb & Blueberry',variant:'Adult Cat',icon:'🐈',
    protein:'New Zealand Grass-Fed Lamb',
    nutrition:{protein:44,proteinAnimal:98,fat:20,moisture:8},
