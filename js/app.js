@@ -18,6 +18,9 @@ function showScreen(name, btn){
   document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
   document.getElementById('s-'+name).classList.add('active');
   btn.classList.add('active');
+  
+  // Initialize screen-specific logic
+  if(name === 'matcher') initMatcher();
 }
 
 // ═══════════════════════════════════════
