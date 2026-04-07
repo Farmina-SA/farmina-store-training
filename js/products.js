@@ -6,28 +6,29 @@
 // ═══════════════════════════════════════
 
 const PRODUCTS = [
-  // ── N&D QUINOA ──
-  {id:'q1',line:'quinoa',lineName:'N&D Quinoa',pet:'dog',stage:'puppy',
+
+  // ── N&D PRIME ──
+  {id:'pr1',line:'prime',lineName:'N&D Prime',pet:'dog',stage:'puppy',
    name:'Chicken & Pomegranate',variant:'Puppy Dog',icon:'🐶',
    protein:'Italian Free-Range Chicken',
-   nutrition:{protein:33,proteinAnimal:98,fat:22,moisture:9},
-   macros:{meat:'80%',grains:'0%',fruits:'19.3%',legumes:'0.7%',fresh:'48%'},
-   highlights:['GMO Free','Meat Meal Free','Grain Free','Byproduct Free','Digest Free'],
-   composition:'Fresh boneless chicken (28%), dehydrated chicken meat (27%), sweet potatoes, chicken fat, dried whole eggs, fresh herrings, dehydrated herrings, fish oil, fiber vegetable of peas, dried carrots, dried alfalfa, chicken cartilages, inulin, FOS, yeast extract (MOS), dried pomegranate (0.5%), dried apple, spinach powder, psyllium (0.3%), dried sweet orange, dried blueberries, sodium chloride, dried brewer\'s yeast, turmeric root (0.2%).',
+   nutrition:{protein:32,proteinAnimal:98,fat:22,moisture:9},
+   macros:{meat:'80%',grains:'0%',fruits:'20%',legumes:'0%',fresh:'48%'},
+   highlights:['GMO Free','Grain Free','Legume Free','High Fresh Meat','No Plant Protein','Puppy Formula'],
+   composition:'Deboned chicken (28%), dried chicken protein (27%), sweet potato, chicken fat, dried eggs, herring, dried herring protein, fish oil (from herring), pea fibre, dried carrots, alfalfa meal, chicken cartilage (source of glucosamine and chondroitin sulphate), inulin, fructooligosaccharides, yeast extract (source of mannan-oligosaccharides), dried pomegranate (0.5%), dried apple, dried spinach, psyllium husks and seeds (0.3%), dried sweet orange, dried blueberry, sodium chloride, dried brewer\'s yeast, turmeric (0.2%), aloe vera extract.',
    suitable:'Puppies and gestating/lactating bitches. All breeds and life stages.',
    sizes:['800g','2.5kg','7kg','12kg'],
-   sell:'The highest fresh meat content in the Farmina range. No grains, no legumes — ideal for dogs with sensitivities or owners wanting ancestral-style nutrition.'},
+   sell:'98% animal-sourced protein with zero legumes — Prime eliminates the pea/lentil debate entirely. Ideal for owners who want maximum animal protein without any plant-protein substitutes. The cleanest Farmina puppy formula available.'},
 
-  {id:'q2',line:'quinoa',lineName:'N&D Quinoa',pet:'dog',stage:'adult',
+  {id:'pr2',line:'prime',lineName:'N&D Prime',pet:'dog',stage:'adult',
    name:'Chicken & Pomegranate',variant:'Adult Dog',icon:'🐕',
    protein:'Italian Free-Range Chicken',
-   nutrition:{protein:30,proteinAnimal:98,fat:18,moisture:9},
-   macros:{meat:'75.8%',grains:'0%',fruits:'21.4%',legumes:'2.8%',fresh:'46%'},
-   highlights:['GMO Free','Meat Meal Free','Grain Free','Byproduct Free','Digest Free'],
-   composition:'Fresh boneless chicken (26%), dehydrated chicken meat (25%), potatoes, chicken fat, dehydrated whole eggs, fresh herring, dehydrated herring, fish oil, fiber vegetable of peas, dried carrots, dried alfalfa, inulin, FOS, MOS, pomegranate powder (0.5%), dehydrated apple, spinach powder, psyllium (0.3%), blackcurrant, dehydrated sweet orange, blueberries, sodium chloride, dried brewer\'s yeast, turmeric root (0.2%), glucosamine, chondroitin sulfate, Marigold extract (source of lutein).',
+   nutrition:{protein:34,proteinAnimal:98,fat:18,moisture:9},
+   macros:{meat:'76%',grains:'0%',fruits:'24%',legumes:'0%',fresh:'46%'},
+   highlights:['GMO Free','Grain Free','Legume Free','High Fresh Meat','No Plant Protein','Glucosamine & Chondroitin'],
+   composition:'Deboned chicken (26%), dried chicken protein (25%), sweet potato, chicken fat, dried eggs, herring, dried herring protein, fish oil (from herring), pea fibre, dried carrots, alfalfa meal, inulin, fructooligosaccharides, yeast extract (source of mannan-oligosaccharides), dried pomegranate (0.5%), dried apple, dried spinach, psyllium husks and seeds (0.3%), dried sweet orange, dried blueberry, sodium chloride, dried brewer\'s yeast, turmeric (0.2%), aloe vera extract, glucosamine, chondroitin sulphate.',
    suitable:'All breeds and all life stages.',
    sizes:['800g','2.5kg','7kg','12kg'],
-   sell:'A premium everyday adult dog food. Glucosamine and chondroitin from natural sources support long-term joint health. Great upsell from standard commercial brands.'},
+   sell:'34% protein entirely from named animal sources, no legumes at all. For customers who\'ve heard concerns about peas/legumes in grain-free food — Prime is the definitive answer. Highest protein content in the adult dog range.'},
 
   {id:'q3',line:'quinoa',lineName:'N&D Quinoa',pet:'cat',stage:'kitten',
    name:'Chicken & Pomegranate',variant:'Kitten',icon:'🐱',

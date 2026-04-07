@@ -1,12 +1,47 @@
 // ═══════════════════════════════════════
 // CALCULATOR LOGIC
 // Feeding guide formula: metabolic body weight × species factor
-// Dogs: ~22.3 × weight^0.75 | Cats: ~16.5 × weight^0.75
+// If feeding-guides.txt is available, use it for product-specific, weight-based feeding calculations.
+// Otherwise, fallback to formula: Dogs: ~22.3 × weight^0.75 | Cats: ~16.5 × weight^0.75
+
+let FEEDING_GUIDES = null;
+
+// Load feeding guides CSV
+fetch('feeding-guides.txt')
+  .then(r => r.text())
+  .then(txt => {
+    FEEDING_GUIDES = txt.split('\n').slice(1).map(line => {
+      const [Product, Weight, Feeding_Dosage_Grams] = line.split(',');
+      return {Product: Product?.trim(), Weight: Weight?.trim(), Feeding_Dosage_Grams: parseFloat(Feeding_Dosage_Grams)};
+    });
+  });
 // ═══════════════════════════════════════
 
-function calcPortion(petType, weightKg){
-  // Based on metabolic body weight formula fitted to Farmina feeding guides
-  // Dogs: ~22.3 × weight^0.75 | Cats: ~16.5 × weight^0.75
+function calcPortion(petType, weightKg, productName, maturityStr){
+  // Try to use feeding guide data if available
+  if (FEEDING_GUIDES && productName) {
+    // Try to find the closest match for product and weight
+    // maturityStr is optional, e.g. "Maturity=10kg"
+    let best = null;
+    let bestScore = -Infinity;
+    FEEDING_GUIDES.forEach(row => {
+      // Basic product match (ignore case)
+      if (row.Product && productName && row.Product.toLowerCase().includes(productName.toLowerCase())) {
+        // Try to match weight/age string
+        let score = 1;
+        if (maturityStr && row.Weight && row.Weight.includes(maturityStr)) score += 2;
+        // Try to extract kg from row.Weight
+        const kgMatch = row.Weight && row.Weight.match(/(\d+)kg/);
+        if (kgMatch && Math.abs(parseInt(kgMatch[1]) - weightKg) < 2) score += 1;
+        if (score > bestScore) {
+          bestScore = score;
+          best = row;
+        }
+      }
+    });
+    if (best) return best.Feeding_Dosage_Grams;
+  }
+  // Fallback to formula
   const factor = petType === 'cat' ? 16.5 : 22.3;
   return Math.round(factor * Math.pow(weightKg, 0.75));
 }
@@ -156,7 +191,20 @@ function runCalc(){
     return;
   }
 
-  const portion = calcPortion(petType, weight);
+  // Try to get selected product name and maturity string for feeding guide lookup
+  let productName = null;
+  let maturityStr = null;
+  const selectedProductId = document.getElementById('cProductSelect')?.value;
+  const selectedProduct = (typeof FARMINA_SCRAPED_PRODUCTS !== 'undefined' && selectedProductId)
+    ? FARMINA_SCRAPED_PRODUCTS.find(p => p.product_id === selectedProductId)
+    : null;
+  if(selectedProduct){
+    productName = selectedProduct.product_name || selectedProduct.line || null;
+    // Try to extract maturity string from product name or UI (future: add UI for age/maturity)
+    // For now, leave null or parse from feeding guide if needed
+  }
+
+  const portion = calcPortion(petType, weight, productName, maturityStr);
   const bagSizeKg = bagSizeG / 1000;
   const costPerG = price / bagSizeG;
   const costPerDay = costPerG * portion;
@@ -167,12 +215,8 @@ function runCalc(){
   document.getElementById('crCostDay').textContent = 'R' + costPerDay.toFixed(2);
   document.getElementById('crDays').textContent = daysPerBag;
   document.getElementById('crMonth').textContent = 'R' + Math.round(monthlyCost);
-  const selectedProductId = document.getElementById('cProductSelect')?.value;
-  const selectedProduct = (typeof FARMINA_SCRAPED_PRODUCTS !== 'undefined' && selectedProductId)
-    ? FARMINA_SCRAPED_PRODUCTS.find(p => p.product_id === selectedProductId)
-    : null;
   document.getElementById('crNote').innerHTML =
-    `Based on mid-range feeding guide for a ${weight}kg ${petType}.<br>` +
+    `Based on ${FEEDING_GUIDES && productName ? 'official feeding guide' : 'mid-range formula'} for a ${weight}kg ${petType}.<br>` +
     `${bagSizeKg}kg bag @ R${price} = <strong style="color:#fff">R${costPerDay.toFixed(2)}/day</strong> · Individual pets vary — adjust for healthy body weight.<br>` +
     `${selectedProduct ? `Product: ${selectedProduct.line} · ${selectedProduct.product_name}<br>` : ''}` +
     `⚠️ Prices subject to change in 2026.`;

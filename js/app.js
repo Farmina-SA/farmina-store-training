@@ -34,9 +34,13 @@ function renderProducts(){
   const q = document.getElementById('psearch').value.toLowerCase();
   const grid = document.getElementById('pgrid');
   let list = PRODUCTS.filter(p=>{
+    // Strict pet filter
     if(filters.pet!=='all' && p.pet!==filters.pet) return false;
+    // Strict stage filter
     if(filters.stage!=='all' && p.stage!==filters.stage) return false;
+    // Strict line filter (no fuzzy matches)
     if(filters.line!=='all' && p.line!==filters.line) return false;
+    // Search only in name, variant, protein, composition
     if(q && !p.name.toLowerCase().includes(q) && !p.variant.toLowerCase().includes(q) &&
        !p.protein.toLowerCase().includes(q) && !p.composition.toLowerCase().includes(q)) return false;
     return true;

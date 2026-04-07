@@ -8,7 +8,8 @@
 // CACHE_NAME version below (e.g. farmina-v2).
 // ═══════════════════════════════════════
 
-const CACHE_NAME = 'farmina-v4';
+// IMPORTANT: Bump this version on every deploy to force users to get the latest assets!
+const CACHE_NAME = 'farmina-v5';
 
 const PRECACHE_ASSETS = [
   './index.html',
@@ -34,7 +35,7 @@ self.addEventListener('install', event => {
   );
 });
 
-// ── Activate: remove old caches ──
+// ── Activate: remove old caches and notify clients if updated ──
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
@@ -45,6 +46,12 @@ self.addEventListener('activate', event => {
       )
     ).then(() => self.clients.claim())
   );
+  // Notify clients to reload if a new service worker is activated
+  self.clients.matchAll({type: 'window'}).then(clients => {
+    clients.forEach(client => {
+      client.postMessage({type: 'NEW_VERSION_AVAILABLE'});
+    });
+  });
 });
 
 // ── Fetch: cache-first, fall back to network ──
