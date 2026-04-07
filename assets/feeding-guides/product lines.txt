@@ -1,0 +1,43 @@
+species,range,subline,recipe,protein,life stage,size class,dietetic_claim
+Dog,N&D Prime Grain Free,,"Chicken & Pomegranate",Chicken,Puppy,Mini,
+Dog,N&D Prime Grain Free,,"Chicken & Pomegranate",Chicken,Puppy,Medium & Maxi,
+Dog,N&D Prime Grain Free,,"Chicken & Pomegranate",Chicken,Adult,Mini,
+Dog,N&D Prime Grain Free,,"Chicken & Pomegranate",Chicken,Adult,Medium & Maxi,
+
+Dog,N&D Ocean,,"Cod, Pumpkin & Orange",Cod,Adult,Mini,
+Dog,N&D Ocean,,"Cod, Pumpkin & Orange",Cod,Adult,Medium & Maxi,
+Dog,N&D Ocean,,"Cod, Pumpkin & Cantaloupe Melon",Cod,Puppy,Mini,
+Dog,N&D Ocean,,"Cod, Pumpkin & Cantaloupe Melon",Cod,Puppy,Medium & Maxi,
+
+Dog,N&D Pumpkin Grain Free,,"Lamb, Pumpkin & Blueberry",Lamb,Puppy,Mini,
+Dog,N&D Pumpkin Grain Free,,"Lamb, Pumpkin & Blueberry",Lamb,Puppy,Medium & Maxi,
+Dog,N&D Pumpkin Grain Free,,"Chicken, Pumpkin & Pomegranate",Chicken,Puppy,Mini,
+Dog,N&D Pumpkin Grain Free,,"Chicken, Pumpkin & Pomegranate",Chicken,Puppy,Medium & Maxi,
+Dog,N&D Pumpkin Grain Free,,"Chicken, Pumpkin & Pomegranate",Chicken,Adult,Mini,
+Dog,N&D Pumpkin Grain Free,,"Chicken, Pumpkin & Pomegranate",Chicken,Adult,Medium & Maxi,
+Dog,N&D Pumpkin Grain Free,,"Lamb, Pumpkin & Blueberry",Lamb,Adult,Mini,
+Dog,N&D Pumpkin Grain Free,,"Lamb, Pumpkin & Blueberry",Lamb,Adult,Medium & Maxi,
+Dog,N&D Pumpkin Grain Free,,"Boar, Pumpkin & Apple",Boar,Adult,Mini,
+
+Dog,N&D Low Ancestral Grain,,"Chicken, Spelt, Oats & Pomegranate",Chicken,Puppy,Mini,
+Dog,N&D Low Ancestral Grain,,"Chicken, Spelt, Oats & Pomegranate",Chicken,Puppy,Medium & Maxi,
+Dog,N&D Low Ancestral Grain,,"Chicken, Spelt, Oats & Pomegranate",Chicken,Adult,Mini,
+Dog,N&D Low Ancestral Grain,,"Chicken, Spelt, Oats & Pomegranate",Chicken,Adult,Medium & Maxi,
+Dog,N&D Low Ancestral Grain,Light,"Chicken, Spelt, Oats & Pomegranate",Chicken,Adult,Mini,Reduction of excess body weight
+Dog,N&D Low Ancestral Grain,Light,"Chicken, Spelt, Oats & Pomegranate",Chicken,Adult,Medium & Maxi,Reduction of excess body weight
+
+Dog,N&D Quinoa Grain Free,Skin & Coat,"Quail, Quinoa, Coconut & Turmeric",Quail,Adult,Mini,Reduction of ingredient & nutrient intolerances; skin & coat support
+Dog,N&D Quinoa Grain Free,Skin & Coat,"Quail, Quinoa, Coconut & Turmeric",Quail,Adult,Medium & Maxi,Reduction of ingredient & nutrient intolerances; skin & coat support
+Dog,N&D Quinoa Grain Free,Skin & Coat,"Duck, Quinoa, Coconut & Turmeric",Duck,Adult,Mini,Reduction of ingredient & nutrient intolerances; skin & coat support
+Dog,N&D Quinoa Grain Free,Skin & Coat,"Duck, Quinoa, Coconut & Turmeric",Duck,Adult,Medium & Maxi,Reduction of ingredient & nutrient intolerances; skin & coat support
+
+Cat,N&D Prime Grain Free,,"Chicken & Pomegranate",Chicken,Kitten,All sizes,
+Cat,N&D Prime Grain Free,,"Chicken & Pomegranate",Chicken,Adult,All sizes,
+Cat,N&D Prime Grain Free,,"Lamb & Blueberry",Lamb,Adult,All sizes,
+Cat,N&D Prime Grain Free,,"Boar & Apple",Boar,Adult,All sizes,
+
+Cat,N&D Ocean,,"Herring & Orange",Herring,Adult,All sizes,
+
+Cat,N&D Pumpkin Grain Free,Neutered,"Lamb, Pumpkin & Blueberry",Lamb,Adult (Neutered),All sizes,
+
+Cat,N&D Quinoa Grain Free,Urinary,"Duck, Quinoa, Cranberry & Chamomile",Duck,Adult,All sizes,Reduction of recurrence of struvite stones; lower urinary tract disease support
