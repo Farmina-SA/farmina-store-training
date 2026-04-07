@@ -67,6 +67,26 @@ const TIPS = [
      a:'All Farmina N&D products are GMO-free — including proteins, grains and botanicals. This is a verified claim, not just a marketing label.',
      script:'"Every ingredient in Farmina is GMO-free. That includes the grains in the Low Ancestral Grain range. It\'s a non-negotiable brand standard."'},
   ]},
+  {icon:'⚠️',title:'Handling Common Objections',items:[
+    {q:'"My dog/cat is fine on their current food. Why change?"',
+     a:'Fine is not thriving. Cheaper foods mask digestive issues, skin dullness, and low energy. Result: more vet visits later. Premium nutrition is preventive. Show energy/coat difference in 4 weeks.',
+     script:'"\'Fine\' often means we haven\'t noticed the problems yet. In 4 weeks on Farmina, you\'ll see shinier coat, firmer stools, better energy, and better breath. Then you can\'t unsee the difference."'},
+    {q:'"I\'ve heard grain-free is bad for dogs\' hearts."',
+     a:'The AAFCO heart study was misinterpreted by media. The study showed NO causal link to grain-free diets. Farmina uses named proteins and healthy ingredients — the formula matters, not the grain-free claim.',
+     script:'"That study actually doesn\'t prove grain-free causes heart issues — it showed correlation in specific boutique brands, not in established brands like Farmina with veterinary backing."'},
+    {q:'"Why not just buy a cheaper premium brand — looks the same."',
+     a:'Price is often justified by fresh meat content. Compare: 48%+ fresh meat (Farmina) vs 15-20% (competitors). Check their first 5 ingredients — notice the difference?',
+     script:'"Let\'s look at ingredients side by side. Farmina\'s first ingredient is always fresh named meat. Most competitors? Meat meal or grains. One 7kg bag will show you the fur quality difference."'},
+    {q:'"My vet recommended [competitor brand]."',
+     a:'Respect the vet. Some brands have relationships with clinics. Ask your vet specifically: "Have they tested Farmina N&D?" Veterinary nutritionists designed Farmina; many vets just aren\'t familiar with it yet.',
+     script:'"Your vet knows your pet best. Many vets stock certain brands — it doesn\'t mean Farmina isn\'t excellent. Would you ask them specifically about N&D? They often recommend it once they see the results."'},
+    {q:'"Can I mix Farmina with cheaper food to save money?"',
+     a:'Yes, and it helps. Even 50% Farmina + 50% current food is a significant nutritional upgrade. The probiotics and fresh meat quality do work at any mixing ratio.',
+     script:'"Absolutely. Even mixing 50/50 gives you the benefits — better digestion, healthier coat, more energy. You can gradually increase Farmina as you see results."'},
+    {q:'"How long until I see results?"',
+     a:'Energy/behavior: 3-5 days. Coat shine: 2-3 weeks. Digestive improvement: 5-7 days. Weight/muscle tone: 6-8 weeks. Frame it as a journey, not a promise.',
+     script:'"You\'ll notice better energy within a week. Coat shine takes 2-3 weeks. The real magic is what happens over 2-3 months — weight stabilizes, vet bills drop, pure vitality."'},
+  ]},
 ];
 
 // ── Tips functions ──
