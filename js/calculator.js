@@ -6,15 +6,23 @@
 
 let FEEDING_GUIDES = null;
 
-// Load feeding guides CSV
+// Load feeding guides CSV (optional — falls back to formula if not present)
 fetch('feeding-guides.txt')
-  .then(r => r.text())
+  .then(r => {
+    if (!r.ok) return null;  // file not found — use formula fallback
+    return r.text();
+  })
   .then(txt => {
-    FEEDING_GUIDES = txt.split('\n').slice(1).map(line => {
-      const [Product, Weight, Feeding_Dosage_Grams] = line.split(',');
-      return {Product: Product?.trim(), Weight: Weight?.trim(), Feeding_Dosage_Grams: parseFloat(Feeding_Dosage_Grams)};
-    });
-  });
+    if (!txt) return;
+    FEEDING_GUIDES = txt.split('\n').slice(1)
+      .filter(line => line.trim())
+      .map(line => {
+        const [Product, Weight, Feeding_Dosage_Grams] = line.split(',');
+        return {Product: Product?.trim(), Weight: Weight?.trim(), Feeding_Dosage_Grams: parseFloat(Feeding_Dosage_Grams)};
+      })
+      .filter(row => row.Product && !isNaN(row.Feeding_Dosage_Grams));
+  })
+  .catch(() => { /* feeding-guides.txt not available — using formula fallback */ });
 // ═══════════════════════════════════════
 
 function calcPortion(petType, weightKg, productName, maturityStr){

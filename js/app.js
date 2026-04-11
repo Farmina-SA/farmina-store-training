@@ -21,6 +21,7 @@ function showScreen(name, btn){
   
   // Initialize screen-specific logic
   if(name === 'matcher') initMatcher();
+  if(name === 'calc') initCalculator();
   if(name === 'search'){
     const input = document.getElementById('screenSearchInput');
     if(input) input.focus();

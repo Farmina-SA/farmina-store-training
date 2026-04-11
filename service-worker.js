@@ -9,17 +9,20 @@
 // ═══════════════════════════════════════
 
 // IMPORTANT: Bump this version on every deploy to force users to get the latest assets!
-const CACHE_NAME = 'farmina-v5';
+const CACHE_NAME = 'farmina-v6';
 
 const PRECACHE_ASSETS = [
   './index.html',
   './manifest.json',
   './css/styles.css',
+  './js/farmina-data.js',
   './js/products.js',
   './js/ingredients.js',
   './js/quiz.js',
   './js/tips.js',
   './js/calculator.js',
+  './js/matcher.js',
+  './js/search.js',
   './js/app.js',
   './assets/logo.png',
   './assets/icons/icon-192.png',
