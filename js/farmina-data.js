@@ -1265,10 +1265,10 @@ const FARMINA_SCRAPED_INGREDIENTS = [
       "neutered",
       "weight management"
     ],
-    "nutritional_role": "",
-    "benefit_statement": "",
-    "claim_risk_level": "high",
-    "notes": "No mapping found — review required.",
+    "nutritional_role": "botanical",
+    "benefit_statement": "Plant fibre that supports normal stool consistency and GI motility.",
+    "claim_risk_level": "low",
+    "notes": "Mapped from user request.",
     "conditions_it_appears_in": "neutered, weight management",
     "life_stages_it_appears_in": "adult, puppy/kitten",
     "species_it_appears_in": "cat, dog",
@@ -1276,7 +1276,7 @@ const FARMINA_SCRAPED_INGREDIENTS = [
   },
   {
     "canonical": "aloe vera extract",
-    "ingredient_class": "botanical/fruit/veg",
+    "ingredient_class": "other",
     "seen_in_n_products": 15,
     "seen_in_lines": [
       "N&D Low Ancestral Grain",
@@ -1291,9 +1291,9 @@ const FARMINA_SCRAPED_INGREDIENTS = [
       "weight management"
     ],
     "nutritional_role": "botanical",
-    "benefit_statement": "Traditionally associated with digestive support.",
-    "claim_risk_level": "high",
-    "notes": "Partial match on 'aloe vera'.",
+    "benefit_statement": "Controlled extracts used for digestive comfort support.",
+    "claim_risk_level": "low",
+    "notes": "Mapped from user request.",
     "conditions_it_appears_in": "neutered, skin & coat, urinary, weight management",
     "life_stages_it_appears_in": "adult, puppy/kitten",
     "species_it_appears_in": "cat, dog",
@@ -2008,8 +2008,8 @@ const FARMINA_SCRAPED_INGREDIENTS = [
   },
   {
     "canonical": "dried apple",
-    "ingredient_class": "botanical/fruit/veg",
-    "seen_in_n_products": 16,
+    "ingredient_class": "other",
+    "seen_in_n_products": 13,
     "seen_in_lines": [
       "N&D Low Ancestral Grain",
       "N&D Ocean",
@@ -2020,10 +2020,10 @@ const FARMINA_SCRAPED_INGREDIENTS = [
       "neutered",
       "weight management"
     ],
-    "nutritional_role": "",
-    "benefit_statement": "",
-    "claim_risk_level": "high",
-    "notes": "No mapping found — review required.",
+    "nutritional_role": "fruit",
+    "benefit_statement": "Source of dietary fibre that supports healthy stools.",
+    "claim_risk_level": "low",
+    "notes": "Mapped from user request.",
     "conditions_it_appears_in": "neutered, weight management",
     "life_stages_it_appears_in": "adult, puppy/kitten",
     "species_it_appears_in": "cat, dog",
@@ -2355,8 +2355,8 @@ const FARMINA_SCRAPED_INGREDIENTS = [
   },
   {
     "canonical": "dried pomegranate",
-    "ingredient_class": "botanical/fruit/veg",
-    "seen_in_n_products": 7,
+    "ingredient_class": "other",
+    "seen_in_n_products": 11,
     "seen_in_lines": [
       "N&D Ocean",
       "N&D Prime",
@@ -2365,10 +2365,10 @@ const FARMINA_SCRAPED_INGREDIENTS = [
     "seen_in_condition_tags": [
       "neutered"
     ],
-    "nutritional_role": "",
-    "benefit_statement": "",
-    "claim_risk_level": "high",
-    "notes": "No mapping found — review required.",
+    "nutritional_role": "fruit",
+    "benefit_statement": "Polyphenols support antioxidant status and beneficial hindgut effects.",
+    "claim_risk_level": "low",
+    "notes": "Mapped from user request.",
     "conditions_it_appears_in": "neutered",
     "life_stages_it_appears_in": "adult, puppy/kitten",
     "species_it_appears_in": "cat, dog",
@@ -2566,7 +2566,7 @@ const FARMINA_SCRAPED_INGREDIENTS = [
   {
     "canonical": "foss",
     "ingredient_class": "other",
-    "seen_in_n_products": 21,
+    "seen_in_n_products": 22,
     "seen_in_lines": [
       "N&D Low Ancestral Grain",
       "N&D Ocean",
@@ -2580,9 +2580,9 @@ const FARMINA_SCRAPED_INGREDIENTS = [
       "weight management"
     ],
     "nutritional_role": "prebiotic",
-    "benefit_statement": "Fructooligosaccharides; support intestinal microbiome balance.",
+    "benefit_statement": "Supports colonic health indices and immune status (Fructooligosaccharides).",
     "claim_risk_level": "low",
-    "notes": "Partial match on 'fos'.",
+    "notes": "Mapped from user request.",
     "conditions_it_appears_in": "neutered, urinary, weight management",
     "life_stages_it_appears_in": "adult, puppy/kitten",
     "species_it_appears_in": "cat, dog",
@@ -2788,8 +2788,8 @@ const FARMINA_SCRAPED_INGREDIENTS = [
   },
   {
     "canonical": "inulin",
-    "ingredient_class": "fibre",
-    "seen_in_n_products": 25,
+    "ingredient_class": "other",
+    "seen_in_n_products": 20,
     "seen_in_lines": [
       "N&D Low Ancestral Grain",
       "N&D Ocean",
@@ -2803,9 +2803,9 @@ const FARMINA_SCRAPED_INGREDIENTS = [
       "weight management"
     ],
     "nutritional_role": "prebiotic",
-    "benefit_statement": "Supports growth of beneficial gut bacteria.",
+    "benefit_statement": "Modulates gut microbiota/metabolites to support microbiome health.",
     "claim_risk_level": "low",
-    "notes": "Matched exactly in benefit dictionary.",
+    "notes": "Updated from user request.",
     "conditions_it_appears_in": "neutered, skin & coat, weight management",
     "life_stages_it_appears_in": "adult, puppy/kitten",
     "species_it_appears_in": "cat, dog",
@@ -2889,7 +2889,7 @@ const FARMINA_SCRAPED_INGREDIENTS = [
   {
     "canonical": "moss",
     "ingredient_class": "other",
-    "seen_in_n_products": 8,
+    "seen_in_n_products": 10,
     "seen_in_lines": [
       "N&D Ocean",
       "N&D Prime"
@@ -2898,9 +2898,9 @@ const FARMINA_SCRAPED_INGREDIENTS = [
       "neutered"
     ],
     "nutritional_role": "prebiotic",
-    "benefit_statement": "Mannanoligosaccharides; support gut wall integrity.",
+    "benefit_statement": "Supports immune-related outcomes and gut health (Mannan-oligosaccharides).",
     "claim_risk_level": "low",
-    "notes": "Partial match on 'mos'.",
+    "notes": "Mapped from user request.",
     "conditions_it_appears_in": "neutered",
     "life_stages_it_appears_in": "adult, puppy/kitten",
     "species_it_appears_in": "cat, dog",
@@ -3198,8 +3198,8 @@ const FARMINA_SCRAPED_INGREDIENTS = [
   },
   {
     "canonical": "rosemary extract",
-    "ingredient_class": "botanical/fruit/veg",
-    "seen_in_n_products": 9,
+    "ingredient_class": "other",
+    "seen_in_n_products": 10,
     "seen_in_lines": [
       "N&D Ocean",
       "N&D Prime"
@@ -3207,10 +3207,10 @@ const FARMINA_SCRAPED_INGREDIENTS = [
     "seen_in_condition_tags": [
       "neutered"
     ],
-    "nutritional_role": "natural antioxidant",
-    "benefit_statement": "Used as a natural preservative alternative.",
+    "nutritional_role": "botanical",
+    "benefit_statement": "Natural antioxidant that slows fat oxidation and supports shelf stability.",
     "claim_risk_level": "low",
-    "notes": "Partial match on 'rosemary'.",
+    "notes": "Mapped from user request.",
     "conditions_it_appears_in": "neutered",
     "life_stages_it_appears_in": "adult, puppy/kitten",
     "species_it_appears_in": "cat, dog",

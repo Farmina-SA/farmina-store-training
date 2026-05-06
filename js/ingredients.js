@@ -36,7 +36,7 @@ const INGREDIENTS = [
    why:'Cod is one of the least allergenic proteins available. Rich in B vitamins, phosphorus and selenium. The mild flavour is highly palatable even for picky eaters.',
    sell:'Best for dogs with food sensitivities or those that have reacted to both chicken AND beef.'},
 
-  {id:'i6',icon:'🐠',name:'Wild Caught Herring',cat:'protein',catLabel:'Oily Fish / Omega Source',
+  {id:'i6',icon:'🐟',name:'Wild Caught Herring',cat:'protein',catLabel:'Oily Fish / Omega Source',
    conditions:['skin','brain','heart','joint','allergy'],
    what:'Atlantic herring, wild caught and used both fresh and dehydrated. Exceptionally rich in omega-3 fatty acids (EPA & DHA).',
    why:'EPA and DHA directly reduce inflammation, support brain function, improve coat condition and support cardiovascular health. Herring is one of the richest natural sources.',
@@ -50,33 +50,33 @@ const INGREDIENTS = [
 
   {id:'i8',icon:'🌿',name:'Inulin',cat:'prebiotic',catLabel:'Prebiotic Fiber',
    conditions:['digestion','immune'],
-   what:'A natural plant-based fiber extracted from chicory root. Functions as a prebiotic — food for beneficial gut bacteria.',
-   why:'A healthy gut microbiome improves digestion, immunity and even mood. Inulin specifically feeds Bifidobacteria and Lactobacilli — the "good guys" in the gut.',
-   sell:'"This food actively feeds the beneficial bacteria in your pet\'s gut." That\'s the difference from standard commercial food.'},
+   what:'A natural prebiotic fibre extracted from chicory root.',
+   why:'Inulin has been shown in nutrition studies to modulate gut microbiota and metabolites in both dogs and cats, supporting a healthy microbiome.',
+   sell:'"This food contains inulin, a prebiotic proven to support a healthy balance of gut bacteria, which is the foundation of immunity and digestion."'},
 
   {id:'i9',icon:'🔬',name:'Fructooligosaccharides (FOS)',cat:'prebiotic',catLabel:'Prebiotic',
    conditions:['digestion','immune'],
-   what:'Short-chain carbohydrates found naturally in plants. A second type of prebiotic that complements inulin.',
-   why:'FOS specifically helps reduce harmful bacteria like Clostridium and E. coli in the gut. Works synergistically with inulin for more complete gut support.',
-   sell:'Farmina uses BOTH inulin AND FOS — a dual-prebiotic approach that most commercial brands don\'t even include one of.'},
+   what:'Short-chain carbohydrates that act as prebiotics.',
+   why:'Research in dog nutrition shows FOS supports colonic health indices and strengthens the immune status when included as part of a balanced diet.',
+   sell:'Farmina uses FOS to specifically support colonic health and immune function. It\'s more than just fibre — it\'s functional gut support.'},
 
   {id:'i10',icon:'🧫',name:'Mannan-oligosaccharides (MOS)',cat:'prebiotic',catLabel:'Immune Prebiotic',
    conditions:['digestion','immune'],
-   what:'Derived from yeast cell walls. Works differently from other prebiotics — it binds to and helps expel harmful bacteria from the gut lining.',
-   why:'MOS acts as a "decoy" receptor for pathogens like Salmonella, helping flush them out before they colonise the gut. Also linked to improved immune response.',
-   sell:'Inulin + FOS + MOS = three complementary gut health ingredients. This is pharmaceutical-grade gut support in a pet food.'},
+   what:'Prebiotics derived from yeast cell walls.',
+   why:'Dog nutrition research supports MOS for its role in immune-related outcomes and overall gut wall support.',
+   sell:'Inulin + FOS + MOS = a triple-action prebiotic approach. MOS specifically helps the immune system respond better to challenges in the gut.'},
 
   {id:'i11',icon:'🍎',name:'Pomegranate',cat:'fruit',catLabel:'Superfood Antioxidant',
-   conditions:['immune','heart'],
-   what:'Dried pomegranate powder at 0.5% of the recipe. One of the most antioxidant-dense fruits known to science.',
-   why:'Pomegranate is rich in punicalagins and punicic acid — unique antioxidants with proven anti-inflammatory effects. Supports cellular health and reduces oxidative damage.',
-   sell:'Pomegranate is literally called a "superfood" in human nutrition. Farmina brings it into pet food at a meaningful inclusion rate.'},
+   conditions:['immune','heart','digestion'],
+   what:'Dried pomegranate, rich in powerful polyphenols.',
+   why:'Pomegranate polyphenols support antioxidant status and provide beneficial effects during hindgut fermentation in dogs.',
+   sell:'Pomegranate isn\'t just for flavor; it provides powerful antioxidants that support both the heart and the gut environment.'},
 
   {id:'i12',icon:'🫐',name:'Blueberries',cat:'fruit',catLabel:'Antioxidant Fruit',
    conditions:['brain','immune','eye'],
-   what:'Dried blueberry powder. Rich in anthocyanins, vitamin C, vitamin K and manganese.',
-   why:'Blueberries cross the blood-brain barrier, making them one of the few foods linked to improved cognitive function. Excellent anti-inflammatory and immune support.',
-   sell:'For senior dogs, ageing cats or breeds prone to cognitive decline — blueberries are a meaningful ingredient, not just marketing.'},
+   what:'Dried blueberry powder, naturally rich in antioxidants.',
+   why:'Used as a functional ingredient to support oxidative stress management and healthy ageing in pets.',
+   sell:'Blueberries provide the antioxidant power needed to support your pet\'s brain and immune system as they age.'},
 
   {id:'i13',icon:'🌱',name:'Turmeric Root',cat:'botanical',catLabel:'Anti-inflammatory Botanical',
    conditions:['joint','digestion'],
@@ -86,9 +86,9 @@ const INGREDIENTS = [
 
   {id:'i14',icon:'🌾',name:'Psyllium Husk',cat:'botanical',catLabel:'Soluble Fiber',
    conditions:['digestion'],
-   what:'The husk of Plantago ovata seeds. Used at 0.3%. One of the most effective natural sources of soluble dietary fiber.',
-   why:'Forms a gel in the gut that regulates bowel movements, lowers cholesterol absorption and supports blood sugar stability. A key ingredient for healthy digestion.',
-   sell:'This is the same ingredient in Metamucil for humans. At 0.3% it provides meaningful digestive support in every meal.'},
+   what:'The husk of Plantago ovata seeds. A powerful soluble fibre.',
+   why:'Shown to improve stool quality and help manage both chronic large-bowel diarrhoea and constipation by supporting proper stool formation.',
+   sell:'If your pet has loose stools or constipation, Psyllium is a proven natural solution that regulates their digestive system.'},
 
   {id:'i15',icon:'🦴',name:'Glucosamine',cat:'joint',catLabel:'Joint Support',
    conditions:['joint'],
@@ -104,9 +104,9 @@ const INGREDIENTS = [
 
   {id:'i17',icon:'🌼',name:'Marigold Extract (Lutein)',cat:'botanical',catLabel:'Eye Health',
    conditions:['eye'],
-   what:'Extract from marigold flowers, standardised for lutein content. Lutein is a carotenoid that concentrates in the eye\'s macula.',
-   why:'Lutein is the primary antioxidant protecting eyes from UV damage and oxidative stress. Linked to reduced risk of cataracts and age-related eye disease.',
-   sell:'Eye conditions are a major concern as pets age. Lutein from marigold extract is proactive protection — most brands don\'t include it.'},
+   what:'Extract from marigold flowers, a natural source of lutein.',
+   why:'Lutein is widely recognized for its antioxidant role in protecting eye tissues and supporting long-term vision health.',
+   sell:'Farmina includes marigold extract as a natural source of lutein to proactively protect your pet\'s eyes from oxidative damage.'},
 
   {id:'i18',icon:'🌾',name:'Organic Spelt',cat:'grain',catLabel:'Ancient Grain (LAG Range)',
    conditions:['digestion'],
@@ -120,7 +120,7 @@ const INGREDIENTS = [
    why:'Oats contain beta-glucan — a type of soluble fiber proven to reduce cholesterol and support immune function. Rich in iron, manganese and B vitamins.',
    sell:'For dogs that need a calorie source beyond protein and fat, oats are the cleanest option. Naturally energising and easily digested.'},
 
-  {id:'i20',icon:'🫚',name:'Fish Oil (Herring)',cat:'protein',catLabel:'Omega-3 Source',
+  {id:'i20',icon:'💧',name:'Fish Oil (Herring)',cat:'protein',catLabel:'Omega-3 Source',
    conditions:['skin','brain','heart','joint'],
    what:'Cold-pressed oil from herring, added as a concentrated source of EPA and DHA omega-3 fatty acids.',
    why:'Omega-3s are anti-inflammatory, support skin and coat condition, improve cognitive function and support heart health. Essential for cats who cannot synthesise DHA efficiently.',
@@ -155,6 +155,72 @@ const INGREDIENTS = [
    what:'Dried coconut included in the N&D Quinoa Skin & Coat formulas. Contains lauric acid and medium-chain triglycerides (MCTs).',
    why:'MCTs are rapidly absorbed and used directly as energy, bypassing normal fat digestion. Lauric acid has natural antimicrobial properties. MCTs also support skin lipid barriers and coat conditioning.',
    sell:'Coconut oil has been popular in holistic pet care for years. The Skin & Coat formula includes it as a whole food ingredient — natural coat conditioning from the inside out.'},
+
+  {id:'i26',icon:'🥦',name:'Vegetables (general)',cat:'botanical',catLabel:'Nutrient Variety',
+   conditions:['digestion', 'immune'],
+   what:'Natural source of fibres and micronutrients from various vegetable mixes.',
+   why:'Provides essential nutrients that support normal digestion and overall vitality for both dogs and cats.',
+   sell:'"A variety of vegetables ensures your pet gets a natural range of micronutrients that support their daily energy and health."'},
+
+  {id:'i27',icon:'🥕',name:'Carrots',cat:'botanical',catLabel:'Digestive & Antioxidant',
+   conditions:['digestion', 'immune'],
+   what:'Dried carrots providing fibre and carotenoids (pro-vitamin A).',
+   why:'Fibre supports stool quality and digestive regularity, while carotenoids contribute to the pet\'s natural antioxidant intake.',
+   sell:'"Carrots aren\'t just for crunch — they provide vital fibre for perfect stools and antioxidants for a healthy immune system."'},
+
+  {id:'i28',icon:'🌿',name:'Alfalfa',cat:'botanical',catLabel:'Digestive Regularity',
+   conditions:['digestion'],
+   what:'Sun-cured alfalfa, a natural source of plant fibre.',
+   why:'Helps support normal stool consistency and GI motility as part of a balanced ancestral diet.',
+   sell:'"Alfalfa is a natural way to ensure your pet\'s digestive system keeps moving correctly and stools stay consistent."'},
+
+  {id:'i29',icon:'🍎',name:'Apples',cat:'fruit',catLabel:'Healthy Stools',
+   conditions:['digestion'],
+   what:'Dried apples, a natural source of dietary fibre.',
+   why:'Used in small amounts to help support healthy stools and digestive regularity.',
+   sell:'"Apples provide a gentle source of fibre that helps maintain regular bowel movements and healthy digestion."'},
+
+  {id:'i30',icon:'🥬',name:'Spinach',cat:'botanical',catLabel:'Antioxidant Support',
+   conditions:['immune'],
+   what:'Leafy greens providing naturally occurring antioxidants and micronutrients.',
+   why:'Leafy greens support overall health and provide essential micronutrients when included appropriately in the diet.',
+   sell:'"Spinach is a powerhouse of natural antioxidants that help protect your pet\'s cells and support their immune system."'},
+
+  {id:'i31',icon:'🌾',name:'Fibre (general)',cat:'prebiotic',catLabel:'Satiety & Gut Health',
+   conditions:['digestion'],
+   what:'A blend of dietary fibres from veterinary-approved sources.',
+   why:'Supports the management of GI signs (like loose stools) and promotes gut health and satiety.',
+   sell:'"The right blend of fibre is essential for both good digestion and helping your pet feel full and satisfied after meals."'},
+
+  {id:'i32',icon:'🟢',name:'Pea fibre',cat:'prebiotic',catLabel:'Intestinal Transit',
+   conditions:['digestion'],
+   what:'An insoluble fibre fraction from peas.',
+   why:'Helps support healthy intestinal transit and promotes stool firmness, especially in pets with sensitive digestion.',
+   sell:'"Pea fibre is a key ingredient for ensuring stools are firm and transit time through the gut is optimal."'},
+
+  {id:'i33',icon:'🍺',name:'Brewer’s yeast',cat:'prebiotic',catLabel:'Immune Modulation',
+   conditions:['digestion', 'immune'],
+   what:'Yeast components including β-glucans.',
+   why:'Studied for its ability to modulate the immune system and support overall gut health in dogs.',
+   sell:'"Brewer\'s yeast is a natural way to boost the immune system and support a healthy digestive environment."'},
+
+  {id:'i34',icon:'🌵',name:'Aloe vera',cat:'botanical',catLabel:'Digestive Comfort',
+   conditions:['digestion'],
+   what:'Controlled gel-derived extracts of the Aloe vera plant.',
+   why:'Traditionally associated with providing digestive comfort; Farmina uses strictly controlled extracts to ensure safety and effectiveness.',
+   sell:'"Aloe vera is nature\'s way of soothing the digestive tract, providing comfort for pets with sensitive stomachs."'},
+
+  {id:'i35',icon:'🍵',name:'Green tea',cat:'botanical',catLabel:'Natural Antioxidant',
+   conditions:['immune'],
+   what:'Green tea extract rich in catechins.',
+   why:'Provides powerful antioxidant activity to fight oxidative stress; inclusion levels are precisely controlled for maximum safety.',
+   sell:'"Green tea extract provides one of the most powerful natural antioxidants known to science, protecting your pet from the inside out."'},
+
+  {id:'i36',icon:'🌿',name:'Rosemary',cat:'botanical',catLabel:'Oxidative Stability',
+   conditions:['immune'],
+   what:'Rosemary extract, a natural antioxidant used for both food stability and pet health.',
+   why:'Documented to provide antioxidant activity and slow the oxidation of fats, ensuring food stays fresh and nutritious.',
+   sell:'"Rosemary is our natural preservative, keeping the food fresh while providing a boost of antioxidants for your pet."'},
 ];
 
 // ═══════════════════════════════════════
@@ -162,13 +228,13 @@ const INGREDIENTS = [
 // id must match the strings used in each ingredient's conditions:[] array
 // ═══════════════════════════════════════
 const BODY_CONDITIONS = [
-  {id:'digestion', icon:'🫁', label:'Digestion',     blurb:'Ingredients that regulate gut health, bowel movements and the microbiome.'},
+  {id:'digestion', icon:'🍏', label:'Digestion',     blurb:'Ingredients that regulate gut health, bowel movements and the microbiome.'},
   {id:'joint',     icon:'🦴', label:'Joints',        blurb:'Natural compounds that build, protect and lubricate joint cartilage.'},
   {id:'skin',      icon:'🐾', label:'Skin & Coat',   blurb:'Omega fatty acids and botanicals that restore skin barrier and coat shine.'},
   {id:'immune',    icon:'🛡️', label:'Immunity',      blurb:'Prebiotics and antioxidants that strengthen the immune response.'},
   {id:'brain',     icon:'🧠', label:'Brain',         blurb:'DHA-rich ingredients that support cognitive function — especially important in seniors.'},
   {id:'eye',       icon:'👁️', label:'Eyes',          blurb:'Carotenoids that protect against age-related eye damage and cataracts.'},
-  {id:'heart',     icon:'🫀', label:'Heart',         blurb:'Omega-3 fatty acids and antioxidants that support cardiovascular health.'},
+  {id:'heart',     icon:'❤️', label:'Heart',         blurb:'Omega-3 fatty acids and antioxidants that support cardiovascular health.'},
   {id:'allergy',   icon:'🌿', label:'Sensitivities', blurb:'Novel proteins rarely used commercially — ideal for food allergy elimination diets.'},
 ];
 
