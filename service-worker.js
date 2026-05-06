@@ -9,7 +9,7 @@
 // ═══════════════════════════════════════
 
 // IMPORTANT: Bump this version on every deploy to force users to get the latest assets!
-const CACHE_NAME = 'farmina-v7';
+const CACHE_NAME = 'farmina-v8';
 
 const PRECACHE_ASSETS = [
   './index.html',

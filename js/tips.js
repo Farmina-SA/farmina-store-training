@@ -87,6 +87,51 @@ const TIPS = [
      a:'Energy/behavior: 3-5 days. Coat shine: 2-3 weeks. Digestive improvement: 5-7 days. Weight/muscle tone: 6-8 weeks. Frame it as a journey, not a promise.',
      script:'"You\'ll notice better energy within a week. Coat shine takes 2-3 weeks. The real magic is what happens over 2-3 months — weight stabilizes, vet bills drop, pure vitality."'},
   ]},
+  {icon:'⏱️',title:'The 20-Second Pitch',items:[
+    {q:'"What is Farmina in a nutshell?"',
+     a:'Italian nutrition where Nature is the inspiration and Science is the method. Research-backed, natural antioxidants, and nitrogen-packed for freshness.',
+     script:'"Farmina is Italian nutrition where Nature is the inspiration and Science is the method. Recipes are designed through research, use natural antioxidants, and are packed in a protective atmosphere where nitrogen replaces oxygen to help keep food fresh."'}
+  ]},
+  {icon:'🚀',title:'The 60-Second Sales Flow',items:[
+    {q:'Step 1: ASK (3 key questions)',
+     a:'1. Dog or cat — and age? \n2. Any sensitivities: tummy, skin/coat, or weight? \n3. What are you feeding now, and what’s not working?',
+     script:'"To help find the right match, can I ask: is it for a dog or cat, and what age? Any specific sensitivities with skin or tummy? And what are they eating currently that isn\'t quite working?"'},
+    {q:'Step 2: MATCH (Type of solution)',
+     a:'Grain-free preference → N&D Grain-free lines. \nBalanced with selected grains → Ancestral Grain (spelt + oats). \nWeight control → "Light" positioning.',
+     script:'"Based on that, if you prefer grain-free, our N&D lines are ideal. If you want a balanced option with selected ancient grains like spelt and oats, Ancestral Grain is the perfect low-GI choice."'},
+    {q:'Step 3: PROVE (Science & Freshness)',
+     a:'- Natural antioxidants (tocopherols). \n- Nitrogen packing (replaces oxygen). \n- Cold infusion vitamins. \n- Research with Univ. of Naples.',
+     script:'"What makes it different is that we replace oxygen with nitrogen in the bag to keep it fresh without heavy chemicals, and we use a cold-infusion process so the vitamins stay effective for longer."'},
+    {q:'Step 4: CLOSE (The 2-Option Choice)',
+     a:'Offer a primary recommendation based on their needs and one alternative.',
+     script:'"Based on what you said, I’d choose the Pumpkin line for digestive comfort. If you prefer a more traditional fish-based option, the Ocean line is the alternative. Which feels right for your pet?"'}
+  ]},
+  {icon:'📉',title:'Explaining Low GI',items:[
+    {q:'"What does Low GI mean for my pet?"',
+     a:'It means steady energy release throughout the day rather than blood sugar spikes and crashes.',
+     script:'"Think of it as steady energy across the day. It\'s designed with a low glycaemic index approach using either grain-free ingredients or selected ancestral grains to avoid those sugar spikes."'}
+  ]},
+  {icon:'📈',title:'Helpful Upselling & Add-ons',items:[
+    {q:'Value Close: Choosing the right size.',
+     a:'Moving up one bag size usually provides the best cost-per-day value for the customer.',
+     script:'"If you have the space, going up just one bag size usually gives you the best cost-per-day value. It works out significantly cheaper in the long run."'},
+    {q:'Mix-feeding: Wet + Dry variety.',
+     a:'Position wet food as an add-on for variety, hydration, and extra palatability.',
+     script:'"Some pet parents like mixing wet and dry for variety — the dry provides the crunch and routine, while the wet adds extra palatability and hydration."'},
+    {q:'Transition Tip: Reducing returns.',
+     a:'7–10 day transition, fresh water always, and a warning that mild temporary stool shifts can happen.',
+     script:'"Just a tip: do a slow 7–10 day transition. A few mild stool shifts are normal at first, but it ensures they settle onto the new food perfectly."'}
+  ]},
+  {icon:'🗣️',title:'Staff Cheat Lines (Compliant)',items:[
+    {q:'How to talk about benefits safely.',
+     a:'Use "supports" language to stay compliant while highlighting results.',
+     script:'"This recipe supports digestive comfort through correct portions... It supports skin & coat wellbeing through balanced nutrition... It supports healthy weight management."'}
+  ]},
+  {icon:'🏪',title:'Merchandising for Conversion',items:[
+    {q:'How to organize the shelf for sales.',
+     a:'Block by need: Puppy/Kitten → Adult → Light/Weight. Use shelf talkers for Nitrogen Freshness and Low GI.',
+     script:'"We find customers choose faster when we block by need — start with puppies, then adults, then weight management. Adding a note about the nitrogen packing for freshness really helps conversion."'}
+  ]},
 ];
 
 // ── Tips functions ──
