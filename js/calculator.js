@@ -174,8 +174,6 @@ function setGenericBagOptions(){
       '<option value="7000" selected>7 kg</option>' +
       '<option value="10000">10 kg</option>' +
       '<option value="12000">12 kg</option>' +
-      '<option value="15000">15 kg</option>' +
-      '<option value="20000">20 kg</option>' +
     '</optgroup>' +
     '<optgroup label="Cat">' +
       '<option value="300">300 g</option>' +
