@@ -220,13 +220,13 @@ const PRODUCTS = [
   {id:'cp6',line:'prime',lineName:'N&D Prime Grain Free',pet:'cat',stage:'neutered',
    name:'Chicken & Pomegranate',variant:'Neutered Adult Cat',icon:'🐈‍⬛',
    protein:'Chicken',
-   nutrition:{protein:35,proteinAnimal:96,fat:13,moisture:8,estimated:true},
-   macros:{meat:'82%',grains:'0%',fruits:'15%',legumes:'2%',fresh:'45%'},
-   highlights:['GMO Free','Meat Meal Free','Grain Free','Neutered','Weight Management','L-Carnitine'],
-   composition:'Fresh boneless chicken (26%), dehydrated chicken meat (24%), potatoes, chicken fat, dehydrated whole eggs, fresh herring, dehydrated herring, fish oil, hydrolyzed animal proteins, pea fibre, dried carrots, dried alfalfa, inulin, FOS, MOS, pomegranate powder (0.5%), dehydrated apple, spinach powder, psyllium (0.3%), blueberries, sodium chloride, L-carnitine, dried brewer\'s yeast, turmeric root (0.2%), glucosamine, chondroitin sulfate, Marigold extract (lutein).',
+   nutrition:{protein:46,proteinAnimal:98,fat:11,moisture:8},
+   macros:{meat:'86%',grains:'0%',fruits:'14%',legumes:'0%',fresh:'47%'},
+   highlights:['GMO Free','Meat Meal Free','Grain Free','Neutered','Weight Management','High Taurine'],
+   composition:'Fresh boneless chicken (30%), dehydrated chicken (28%), sweet potato, chicken fat, dehydrated whole eggs, fresh herring, dehydrated herring, herring oil, pea fibre, dried carrots, dried alfalfa, inulin, FOS, MOS, pomegranate powder (0.5%), dehydrated apple, spinach powder, psyllium (0.3%), blueberries, sodium chloride, dried brewer\'s yeast, turmeric root (0.2%), glucosamine, chondroitin sulfate, Marigold extract (lutein).',
    suitable:'Neutered/sterilised cats. All breeds and all life stages.',
    sizes:['300g','1.5kg','5kg'],
-   sell:'Neutered cats have a 20–30% lower calorie requirement. This formula is calorie-controlled with L-carnitine to support healthy weight — using the same premium chicken the standard Prime range is known for.'},
+   sell:'High protein (46%) keeps lean muscle, while low fat (11%) manages weight — the right balance for neutered cats. Exceptional taurine levels (8500mg/kg) support heart health throughout their life.'},
 
   // ── N&D OCEAN (CAT) ──
   {id:'co1',line:'ocean',lineName:'N&D Ocean',pet:'cat',stage:'adult',
