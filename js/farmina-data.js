@@ -36,14 +36,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 1500.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-ocean-feline/494-herring-&-orange-adult.html",
-        "price_current": 579.0,
+        "price_current": 599.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 386.0,
-        "price_per_100g": 38.6
+        "price_per_kg": 399.33,
+        "price_per_100g": 39.93
       },
       {
         "sku_id": "S0003",
@@ -53,14 +53,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 5000.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-ocean-feline/494-herring-&-orange-adult.html",
-        "price_current": 1349.0,
+        "price_current": 1399.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 269.8,
-        "price_per_100g": 26.98
+        "price_per_kg": 279.8,
+        "price_per_100g": 27.98
       }
     ]
   },
@@ -99,14 +99,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 1500.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/144-chicken-&-pomegranate-kitten.html",
-        "price_current": 579.0,
+        "price_current": 599.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 386.0,
-        "price_per_100g": 38.6
+        "price_per_kg": 399.33,
+        "price_per_100g": 39.93
       }
     ]
   },
@@ -145,14 +145,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 1500.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/145-chicken-&-pomegranate-adult.html",
-        "price_current": 579.0,
+        "price_current": 599.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 386.0,
-        "price_per_100g": 38.6
+        "price_per_kg": 399.33,
+        "price_per_100g": 39.93
       },
       {
         "sku_id": "S0008",
@@ -162,14 +162,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 5000.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/145-chicken-&-pomegranate-adult.html",
-        "price_current": 1349.0,
+        "price_current": 1399.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 269.8,
-        "price_per_100g": 26.98
+        "price_per_kg": 279.8,
+        "price_per_100g": 27.98
       }
     ]
   },
@@ -208,14 +208,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 1500.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/146-chicken-&-pomegranate-neutered.html",
-        "price_current": 579.0,
+        "price_current": 599.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 386.0,
-        "price_per_100g": 38.6
+        "price_per_kg": 399.33,
+        "price_per_100g": 39.93
       },
       {
         "sku_id": "S0011",
@@ -225,14 +225,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 5000.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/146-chicken-&-pomegranate-neutered.html",
-        "price_current": 1349.0,
+        "price_current": 1399.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 269.8,
-        "price_per_100g": 26.98
+        "price_per_kg": 279.8,
+        "price_per_100g": 27.98
       }
     ]
   },
@@ -271,14 +271,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 1500.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/147-boar-&-apple-adult.html",
-        "price_current": 579.0,
+        "price_current": 599.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 386.0,
-        "price_per_100g": 38.6
+        "price_per_kg": 399.33,
+        "price_per_100g": 39.93
       },
       {
         "sku_id": "S0014",
@@ -288,14 +288,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 5000.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/147-boar-&-apple-adult.html",
-        "price_current": 1349.0,
+        "price_current": 1399.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 269.8,
-        "price_per_100g": 26.98
+        "price_per_kg": 279.8,
+        "price_per_100g": 27.98
       }
     ]
   },
@@ -334,14 +334,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 1500.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/149-lamb-&-blueberry-adult.html",
-        "price_current": 579.0,
+        "price_current": 599.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 386.0,
-        "price_per_100g": 38.6
+        "price_per_kg": 399.33,
+        "price_per_100g": 39.93
       },
       {
         "sku_id": "S0017",
@@ -351,14 +351,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 5000.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-prime-grain-free-feline/149-lamb-&-blueberry-adult.html",
-        "price_current": 1349.0,
+        "price_current": 1399.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 269.8,
-        "price_per_100g": 26.98
+        "price_per_kg": 279.8,
+        "price_per_100g": 27.98
       }
     ]
   },
@@ -380,14 +380,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 300.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-pumpkin-grain-free-feline/710-neutered,-lamb,-pumpkin-and-blueberry-adult.html",
-        "price_current": 159.0,
+        "price_current": 169.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 530.0,
-        "price_per_100g": 53.0
+        "price_per_kg": 563.33,
+        "price_per_100g": 56.33
       },
       {
         "sku_id": "S0019",
@@ -397,14 +397,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 1500.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-pumpkin-grain-free-feline/710-neutered,-lamb,-pumpkin-and-blueberry-adult.html",
-        "price_current": 549.0,
+        "price_current": 599.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 366.0,
-        "price_per_100g": 36.6
+        "price_per_kg": 399.33,
+        "price_per_100g": 39.93
       },
       {
         "sku_id": "S0020",
@@ -414,14 +414,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 5000.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-pumpkin-grain-free-feline/710-neutered,-lamb,-pumpkin-and-blueberry-adult.html",
-        "price_current": 1249.0,
+        "price_current": 1399.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 249.8,
-        "price_per_100g": 24.98
+        "price_per_kg": 279.8,
+        "price_per_100g": 27.98
       }
     ]
   },
@@ -460,14 +460,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 1500.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-quinoa-grain-free-feline/438-urinary-duck.html",
-        "price_current": 579.0,
+        "price_current": 599.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 386.0,
-        "price_per_100g": 38.6
+        "price_per_kg": 399.33,
+        "price_per_100g": 39.93
       },
       {
         "sku_id": "S0023",
@@ -477,14 +477,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 5000.0,
         "kibble_size": "",
         "sku_url": "https://www.farmina.com/za/eshop/cat-food/n&d-quinoa-grain-free-feline/438-urinary-duck.html",
-        "price_current": 1349.0,
+        "price_current": 1399.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 269.8,
-        "price_per_100g": 26.98
+        "price_per_kg": 279.8,
+        "price_per_100g": 27.98
       }
     ]
   },
@@ -523,14 +523,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 2500.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-low-ancestral-grain-canine/106-chicken-&-pomegranate-puppy-mini.html",
-        "price_current": 515.0,
+        "price_current": 499.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 206.0,
-        "price_per_100g": 20.6
+        "price_per_kg": 199.6,
+        "price_per_100g": 19.96
       },
       {
         "sku_id": "S0026",
@@ -540,14 +540,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 7000.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-low-ancestral-grain-canine/106-chicken-&-pomegranate-puppy-mini.html",
-        "price_current": 1075.0,
+        "price_current": 999.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 153.57,
-        "price_per_100g": 15.36
+        "price_per_kg": 142.71,
+        "price_per_100g": 14.27
       }
     ]
   },
@@ -569,14 +569,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 12000.0,
         "kibble_size": "medium",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-low-ancestral-grain-canine/108-chicken-&-pomegranate-puppy-medium&maxi.html",
-        "price_current": 1599.0,
+        "price_current": 1549.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 133.25,
-        "price_per_100g": 13.32
+        "price_per_kg": 129.08,
+        "price_per_100g": 12.91
       }
     ]
   },
@@ -632,14 +632,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 7000.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-low-ancestral-grain-canine/109-chicken-&-pomegranate-adult-mini.html",
-        "price_current": 1049.0,
+        "price_current": 999.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 149.86,
-        "price_per_100g": 14.99
+        "price_per_kg": 142.71,
+        "price_per_100g": 14.27
       }
     ]
   },
@@ -661,14 +661,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 12000.0,
         "kibble_size": "medium",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-low-ancestral-grain-canine/111-chicken-&-pomegranate-adult-medium&maxi.html",
-        "price_current": 1499.0,
+        "price_current": 1549.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 124.92,
-        "price_per_100g": 12.49
+        "price_per_kg": 129.08,
+        "price_per_100g": 12.91
       }
     ]
   },
@@ -719,14 +719,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 12000.0,
         "kibble_size": "medium",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-low-ancestral-grain-canine/113-chicken-&-pomegranate-light-medium&maxi.html",
-        "price_current": 1499.0,
+        "price_current": 1549.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 124.92,
-        "price_per_100g": 12.49
+        "price_per_kg": 129.08,
+        "price_per_100g": 12.91
       }
     ]
   },
@@ -765,14 +765,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 2500.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-ocean-canine/580-cod,-pumpkin-&-orange-adult-mini.html",
-        "price_current": 619.0,
+        "price_current": 629.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 247.6,
-        "price_per_100g": 24.76
+        "price_per_kg": 251.6,
+        "price_per_100g": 25.16
       },
       {
         "sku_id": "S0036",
@@ -782,14 +782,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 7000.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-ocean-canine/580-cod,-pumpkin-&-orange-adult-mini.html",
-        "price_current": 1279.0,
+        "price_current": 1299.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 182.71,
-        "price_per_100g": 18.27
+        "price_per_kg": 185.57,
+        "price_per_100g": 18.56
       }
     ]
   },
@@ -811,14 +811,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 12000.0,
         "kibble_size": "medium",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-ocean-canine/582-cod,-pumpkin-&-orange-adult-medium-&-maxi.html",
-        "price_current": 1899.0,
+        "price_current": 1999.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 158.25,
-        "price_per_100g": 15.82
+        "price_per_kg": 166.58,
+        "price_per_100g": 16.66
       }
     ]
   },
@@ -857,14 +857,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 2500.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-ocean-canine/704-cod,-pumpkin-and-cantaloupe-melon-puppy-mini.html",
-        "price_current": 659.0,
+        "price_current": 629.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 263.6,
-        "price_per_100g": 26.36
+        "price_per_kg": 251.6,
+        "price_per_100g": 25.16
       },
       {
         "sku_id": "S0040",
@@ -874,14 +874,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 7000.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-ocean-canine/704-cod,-pumpkin-and-cantaloupe-melon-puppy-mini.html",
-        "price_current": 1329.0,
+        "price_current": 1299.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 189.86,
-        "price_per_100g": 18.99
+        "price_per_kg": 185.57,
+        "price_per_100g": 18.56
       }
     ]
   },
@@ -903,14 +903,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 12000.0,
         "kibble_size": "medium",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-ocean-canine/705-cod,-pumpkin-and-cantaloupe-melon-puppy-medium-&-maxi.html",
-        "price_current": 1949.0,
+        "price_current": 1999.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 162.42,
-        "price_per_100g": 16.24
+        "price_per_kg": 166.58,
+        "price_per_100g": 16.66
       }
     ]
   },
@@ -932,14 +932,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 800.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-prime-grain-free-canine/585-chicken-&-pomegranate-puppy-mini.html",
-        "price_current": 315.0,
+        "price_current": 325.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 393.75,
-        "price_per_100g": 39.38
+        "price_per_kg": 406.25,
+        "price_per_100g": 40.62
       },
       {
         "sku_id": "S0043",
@@ -949,14 +949,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 2500.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-prime-grain-free-canine/585-chicken-&-pomegranate-puppy-mini.html",
-        "price_current": 689.0,
+        "price_current": 679.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 275.6,
-        "price_per_100g": 27.56
+        "price_per_kg": 271.6,
+        "price_per_100g": 27.16
       },
       {
         "sku_id": "S0044",
@@ -966,14 +966,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 7000.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-prime-grain-free-canine/585-chicken-&-pomegranate-puppy-mini.html",
-        "price_current": 1419.0,
+        "price_current": 1349.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 202.71,
-        "price_per_100g": 20.27
+        "price_per_kg": 192.71,
+        "price_per_100g": 19.27
       }
     ]
   },
@@ -995,14 +995,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 12000.0,
         "kibble_size": "medium",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-prime-grain-free-canine/92-chicken-&-pomegranate-puppy-medium&maxi.html",
-        "price_current": 2049.0,
+        "price_current": 1999.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 170.75,
-        "price_per_100g": 17.07
+        "price_per_kg": 166.58,
+        "price_per_100g": 16.66
       }
     ]
   },
@@ -1024,14 +1024,14 @@ const FARMINA_SCRAPED_PRODUCTS = [
         "pack_size_grams": 800.0,
         "kibble_size": "mini",
         "sku_url": "https://www.farmina.com/za/eshop/dog-food/n&d-prime-grain-free-canine/93-chicken-&-pomegranate-adult-mini.html",
-        "price_current": 315.0,
+        "price_current": 325.0,
         "price_original": null,
         "currency": "ZAR",
         "promo_flag": "False",
         "promo_label": "",
         "availability": "in stock",
-        "price_per_kg": 393.75,
-        "price_per_100g": 39.38
+        "price_per_kg": 406.25,
+        "price_per_100g": 40.62
       },
       {
         "sku_id": "S0047",
