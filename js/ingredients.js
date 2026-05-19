@@ -12,7 +12,7 @@ const INGREDIENTS = [
    why:'Fresh meat provides biologically available protein that dogs and cats evolved to digest. Being listed first means it\'s the highest percentage ingredient before water weight is accounted for.',
    sell:'Ask customers: "Would you rather feed your pet fresh chicken or chicken powder?" That\'s the difference.'},
 
-  {id:'i2',icon:'🥩',name:'Dehydrated Chicken Meat',cat:'protein',catLabel:'Concentrated Protein',
+  {id:'i2',icon:'🐔',name:'Dehydrated Chicken Meat',cat:'protein',catLabel:'Concentrated Protein',
    conditions:[],
    what:'Chicken that\'s been gently dried to remove moisture, concentrating the protein content to ~4x that of fresh meat.',
    why:'Provides dense, stable protein. When fresh + dehydrated chicken are combined, the total chicken content is significant — typically 50%+ of the recipe.',
@@ -30,7 +30,7 @@ const INGREDIENTS = [
    why:'Grass-fed animals have better omega-3 to omega-6 ratios than grain-fed. No growth hormones, no antibiotics — cleaner protein profile.',
    sell:'New Zealand has some of the strictest agricultural regulations in the world. Pure, traceable, premium.'},
 
-  {id:'i5',icon:'🐟',name:'Atlantic Wild Caught Cod',cat:'protein',catLabel:'Fish Protein',
+  {id:'i5',icon:'🐠',name:'Atlantic Wild Caught Cod',cat:'protein',catLabel:'Fish Protein',
    conditions:['allergy'],
    what:'White fish caught from wild Atlantic waters. Low in fat, high in quality protein, naturally hypoallergenic.',
    why:'Cod is one of the least allergenic proteins available. Rich in B vitamins, phosphorus and selenium. The mild flavour is highly palatable even for picky eaters.',
@@ -66,7 +66,7 @@ const INGREDIENTS = [
    why:'Dog nutrition research supports MOS for its role in immune-related outcomes and overall gut wall support.',
    sell:'Inulin + FOS + MOS = a triple-action prebiotic approach. MOS specifically helps the immune system respond better to challenges in the gut.'},
 
-  {id:'i11',icon:'🍎',name:'Pomegranate',cat:'fruit',catLabel:'Superfood Antioxidant',
+  {id:'i11',icon:'🍇',name:'Pomegranate',cat:'fruit',catLabel:'Superfood Antioxidant',
    conditions:['immune','heart','digestion'],
    what:'Dried pomegranate, rich in powerful polyphenols.',
    why:'Pomegranate polyphenols support antioxidant status and provide beneficial effects during hindgut fermentation in dogs.',
@@ -78,13 +78,13 @@ const INGREDIENTS = [
    why:'Used as a functional ingredient to support oxidative stress management and healthy ageing in pets.',
    sell:'Blueberries provide the antioxidant power needed to support your pet\'s brain and immune system as they age.'},
 
-  {id:'i13',icon:'🌱',name:'Turmeric Root',cat:'botanical',catLabel:'Anti-inflammatory Botanical',
+  {id:'i13',icon:'🟡',name:'Turmeric Root',cat:'botanical',catLabel:'Anti-inflammatory Botanical',
    conditions:['joint','digestion'],
    what:'Dried turmeric root at 0.2%. Contains curcumin — one of the most studied natural anti-inflammatory compounds.',
    why:'Curcumin inhibits inflammatory pathways at the molecular level. Supported by hundreds of studies for joint pain, digestive inflammation and liver health.',
    sell:'Turmeric is a vet-recommended natural supplement for dogs with arthritis. It\'s already in the food — no extra cost, no hassle.'},
 
-  {id:'i14',icon:'🌾',name:'Psyllium Husk',cat:'botanical',catLabel:'Soluble Fiber',
+  {id:'i14',icon:'🌱',name:'Psyllium Husk',cat:'botanical',catLabel:'Soluble Fiber',
    conditions:['digestion'],
    what:'The husk of Plantago ovata seeds. A powerful soluble fibre.',
    why:'Shown to improve stool quality and help manage both chronic large-bowel diarrhoea and constipation by supporting proper stool formation.',
@@ -96,7 +96,7 @@ const INGREDIENTS = [
    why:'Glucosamine is the building block of joint cartilage. Supplementation has been shown to slow cartilage breakdown and reduce joint pain in dogs.',
    sell:'Large breed owners worry about hip dysplasia. Older dog owners worry about arthritis. This is the supplement vets always recommend — already included.'},
 
-  {id:'i16',icon:'💪',name:'Chondroitin Sulfate',cat:'joint',catLabel:'Joint Support',
+  {id:'i16',icon:'🦴',name:'Chondroitin Sulfate',cat:'joint',catLabel:'Joint Support',
    conditions:['joint'],
    what:'Works alongside glucosamine to maintain joint health. Found naturally in cartilage and connective tissue.',
    why:'Chondroitin draws fluid into cartilage (keeping it cushioned) and inhibits enzymes that break down cartilage. The glucosamine+chondroitin combination is more effective than either alone.',
@@ -144,7 +144,7 @@ const INGREDIENTS = [
    why:'Marine-sourced glucosamine from shrimp shells is highly bioavailable. Including it from puppyhood supports correct joint and cartilage development, particularly important in medium and large breed puppies.',
    sell:'Most puppy foods use synthetic glucosamine. Farmina Ocean Puppy uses real dried shrimp — natural joint support that starts on day one.'},
 
-  {id:'i24',icon:'🌰',name:'Linseed (Flaxseed)',cat:'botanical',catLabel:'Plant Omega-3',
+  {id:'i24',icon:'🫘',name:'Linseed (Flaxseed)',cat:'botanical',catLabel:'Plant Omega-3',
    conditions:['skin'],
    what:'Cold-pressed linseed (flaxseed) used in the N&D Quinoa Skin & Coat formulas. The richest plant source of ALA omega-3 fatty acids.',
    why:'ALA omega-3 supports skin barrier function and reduces trans-epidermal water loss — keeping skin hydrated and coat glossy. Combined with fish oil, linseed creates a comprehensive omega-3 and omega-6 fatty acid profile.',
