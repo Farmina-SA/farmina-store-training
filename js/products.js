@@ -101,14 +101,14 @@ const PRODUCTS = [
    sell:'Green tea and aloe vera support skin and joint health.'},
 
   {id:'dp7',line:'pumpkin',lineName:'N&D Pumpkin Grain Free',pet:'dog',stage:'adult',
-   name:'Boar, Pumpkin & Apple',variant:'Adult Dog Mini',icon:'🐗',
+   name:'Boar, Pumpkin & Apple',variant:'Adult Dog',icon:'🐗',
    protein:'Boar',
    nutrition:{protein:30,proteinAnimal:96,fat:18,moisture:9},
    macros:{meat:'67.5%',grains:'0%',fruits:'15.1%',legumes:'17.4%',fresh:'47%'},
    highlights:['GMO Free','Meat Meal Free','Grain Free','Novel Protein','Wild Boar'],
    composition:'Fresh boneless wild boar (24%), dehydrated boar meat (22%), pea starch, chicken fat, dehydrated pumpkin (5%), dehydrated whole eggs, fish oil, pea vegetable fibre, dried carrots, dried alfalfa, inulin, FOS, MOS, dehydrated apple (0.5%), spinach powder, psyllium (0.3%), pomegranate powder, blackcurrant, dehydrated sweet orange, blueberries, sodium chloride, dried brewer\'s yeast, turmeric root (0.2%), glucosamine, chondroitin sulphate, Marigold extract (lutein).',
    suitable:'All breeds and all life stages.',
-   sizes:['800g','2.5kg'],
+   sizes:['800g','2.5kg','7kg','12kg'],
    sell:'Wild boar is rarely used in pet food — ideal for elimination diets or rotation feeding.'},
 
   // ── N&D LOW ANCESTRAL GRAIN (DOG) ──
@@ -142,7 +142,7 @@ const PRODUCTS = [
    highlights:['GMO Free','Meat Meal Free','Reduced Calorie','Organic Spelt & Oats','Weight Management'],
    composition:'Fresh boneless chicken (20%), dehydrated chicken meat (18%), spelt (10%), oats (10%), fresh herring, dehydrated herring, dehydrated whole eggs, dried beet pulp, dried alfalfa, chicken fat, fish oil, dried carrots, inulin, FOS, MOS, pomegranate powder (0.5%), dehydrated apple, spinach powder, psyllium (0.3%), blackcurrant, dehydrated sweet orange, blueberries, sodium chloride, dried brewer\'s yeast, turmeric root (0.2%), glucosamine, chondroitin sulfate, Marigold extract (lutein).',
    suitable:'Adult dogs needing weight management. All breeds.',
-   sizes:['800g','2.5kg','7kg','12kg'],
+   sizes:['2.5kg','12kg'],
    sell:'Reduced calorie formula for overweight or less active dogs.'},
 
   // ── N&D QUINOA GRAIN FREE (DOG - SKIN & COAT) ──
@@ -154,7 +154,7 @@ const PRODUCTS = [
    highlights:['GMO Free','Mono Protein','Grain Free','Skin & Coat','Novel Protein','Lean Protein'],
    composition:'Quail, dehydrated quail protein, pea starch, fish oil from herring, quinoa seed (extracted), linseed, dried coconut, turmeric, inulin, fructooligosaccharides, yeast extract (source of mannooligosaccharides), calcium carbonate, dicalcium phosphate, psyllium husks and seeds, potassium chloride, sodium chloride, dried brewers\' yeast, aloe vera extract, glucosamine, chondroitin sulphate.',
    suitable:'All breeds and all life stages. For dogs with food sensitivities or skin and coat concerns.',
-   sizes:['800g','2.5kg','7kg','12kg'],
+   sizes:['800g','2.5kg','7kg'],
    sell:'Quail is exceptionally lean and highly digestible with omega fatty acid support for skin and coat health.'},
 
   {id:'dq2',line:'quinoa',lineName:'N&D Quinoa Grain Free',pet:'dog',stage:'adult',
@@ -165,7 +165,7 @@ const PRODUCTS = [
    highlights:['GMO Free','Mono Protein','Grain Free','Skin & Coat','Novel Protein','Omega Rich'],
    composition:'Boneless duck, dehydrated duck protein, pea starch, fish oil from herring, quinoa seed (extracted), linseed, dried coconut, turmeric, inulin, fructooligosaccharides, yeast extract (source of mannooligosaccharides), calcium carbonate, dicalcium phosphate, psyllium husks and seeds, potassium chloride, sodium chloride, dried brewers\' yeast, aloe vera extract, glucosamine, chondroitin sulphate.',
    suitable:'All breeds and all life stages. For dogs with food sensitivities or skin and coat concerns.',
-   sizes:['800g','2.5kg','7kg','12kg'],
+   sizes:['800g','2.5kg','7kg'],
    sell:'Mono-protein skin and coat formula with duck and quinoa for exceptional omega support.'},
 
   // ═══════════════════════════════════════
@@ -269,34 +269,35 @@ function scoreScrapedProduct(product, scraped){
   if(appLine && scrapedLine && (appLine === scrapedLine || appLine.includes(scrapedLine) || scrapedLine.includes(appLine))) {
     score += 5;
   }
+  // Stage-aware bonus so puppy/adult/light SKUs don't bleed across life stages
+  const sn = normalizeText(scraped.product_name);
+  const scrapedStage = sn.includes('puppy') || sn.includes('kitten') ? 'young' :
+    sn.includes('light') || sn.includes('neutered') ? 'special' : 'adult';
+  const productStage = product.stage === 'puppy' || product.stage === 'kitten' ? 'young' :
+    product.stage === 'light' || product.stage === 'neutered' ? 'special' : 'adult';
+  if(scrapedStage === productStage) score += 15;
   return score;
-}
-
-function findScrapedMatch(product){
-  if(typeof FARMINA_SCRAPED_PRODUCTS === 'undefined') return null;
-  const candidates = FARMINA_SCRAPED_PRODUCTS.slice();
-  let best = null;
-  let bestScore = -Infinity;
-  candidates.forEach(scraped=>{
-    const value = scoreScrapedProduct(product, scraped);
-    if(value > bestScore){
-      bestScore = value;
-      best = scraped;
-    }
-  });
-  return bestScore > 0 ? best : null;
 }
 
 function applyScrapedProductData(){
   if(typeof FARMINA_SCRAPED_PRODUCTS === 'undefined') return;
   PRODUCTS.forEach(product=>{
-    const scraped = findScrapedMatch(product);
-    if(!scraped) return;
-    product.scraped_product_id = scraped.product_id;
-    product.scraped_product_name = scraped.product_name;
-    product.scraped_product_url = scraped.product_url;
-    product.scraped_line = scraped.line;
-    product.scraped_skus = scraped.skus || [];
+    const allScored = FARMINA_SCRAPED_PRODUCTS
+      .map(scraped=>({scraped, score:scoreScrapedProduct(product, scraped)}))
+      .filter(({score})=>score>0);
+    if(!allScored.length) return;
+    const topScore = Math.max(...allScored.map(({score})=>score));
+    const topMatches = allScored.filter(({score})=>score===topScore).map(({scraped})=>scraped);
+    const best = topMatches[0];
+    product.scraped_product_id = best.product_id;
+    product.scraped_product_name = best.product_name;
+    product.scraped_product_url = best.product_url;
+    product.scraped_line = best.line;
+    // Merge SKUs from all tied top matches (e.g. MINI + MEDIUM&MAXI), dedup by pack size
+    const seen = new Set();
+    product.scraped_skus = topMatches.flatMap(m=>m.skus||[])
+      .filter(sku=>{ if(seen.has(sku.pack_size_grams)) return false; seen.add(sku.pack_size_grams); return true; })
+      .sort((a,b)=>a.pack_size_grams-b.pack_size_grams);
     const pricedSkus = product.scraped_skus.filter(sku => typeof sku.price_current === 'number');
     if(pricedSkus.length){
       const cheapest = pricedSkus.reduce((best, sku) => (sku.price_current < best.price_current ? sku : best), pricedSkus[0]);
