@@ -181,7 +181,7 @@ const PRODUCTS = [
    highlights:['GMO Free','Meat Meal Free','Grain Free','Kitten Formula','High Protein'],
    composition:'Fresh boneless chicken (30%), dehydrated chicken meat (28%), potatoes, chicken fat, dehydrated whole eggs, fresh herring, dehydrated herring, fish oil, hydrolyzed animal proteins, fiber vegetable of peas, dried carrots, dried alfalfa, inulin, FOS, MOS, pomegranate powder (0.5%), dehydrated apple, spinach powder, psyllium (0.3%), blackcurrant, sweet orange, blueberries, sodium chloride, dried brewer\'s yeast, turmeric root (0.2%), glucosamine, chondroitin sulfate, Marigold extract (lutein).',
    suitable:'Kittens and gestating/lactating cats. All breeds and life stages.',
-   sizes:['300g','1.5kg','5kg'],
+   sizes:['300g','1.5kg'],
    sell:'Cats are obligate carnivores. 86% from animal sources. The highest-quality kitten start available.'},
 
   {id:'cp2',line:'prime',lineName:'N&D Prime Grain Free',pet:'cat',stage:'adult',
